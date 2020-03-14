@@ -22,7 +22,7 @@ constructor(x,i,j,k)
     
   }
 trans()
-  { this.k=this.k+5
+  { this.k=this.k+10
   }
 
 
