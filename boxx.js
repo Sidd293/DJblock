@@ -22,7 +22,7 @@ constructor(x,i,j,k)
     
   }
 trans()
-  { this.k=this.k+10
+  { this.k=this.k+7
   }
 
 
@@ -32,7 +32,7 @@ retz()
   }
 del()
   {
-    if (this.k>1500)
+    if (this.k>500)
     {
   return this.k
  
