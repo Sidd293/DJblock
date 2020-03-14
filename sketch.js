@@ -1,3 +1,4 @@
+rst = 0
 var ncc = 0
 var b=[]
 ct = 0
@@ -29,7 +30,8 @@ var bt = new boxx(100,100,100,2000)
 
 
 function draw() {
-noStroke()
+ ncc=ncc+1
+ noStroke()
 let rms = analyzer.getLevel();
 
   
@@ -67,18 +69,18 @@ translate(0,0,0)
 //console.log('z ix'+b.length)
  // console.log("rms is"+rms)
 
-  if(rms > .45)
+  if(rms > .45 && ncc>20)
 { push()
  var bc = new boxx(100,-200*random(-1,1),-200*random(-1,1),-1000)
 b.push(bc)
-console.log("boz rendered")
+//console.log("boz rendered")
  ncc = 0
 pop()
 
 }
 
 pop()
-  ncc=ncc+1
+ 
 // camera(0, 0, 20 + sin(frameCount * 0.01) * 10, 0, 0, 0, 0, 1, 0);
 }
 
