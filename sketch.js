@@ -21,7 +21,7 @@ song.loop();
    analyzer = new p5.Amplitude();
 
  analyzer.setInput(song);
-var bt = new boxx(100,100,100,2000)
+var bt = new boxx(100,100,100,-2000)
   b.push(bt);
 }
 
@@ -71,7 +71,7 @@ translate(0,0,0)
 
   if(rms > .45 && ncc>20)
 { push()
- var bc = new boxx(100,-200*random(-1,1),-200*random(-1,1),-2000)
+ var bc = new boxx(100,-200*random(-1,1),-200*random(-1,1),-3000)
 b.push(bc)
 //console.log("boz rendered")
  ncc = 0
