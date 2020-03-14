@@ -71,7 +71,7 @@ translate(0,0,0)
 
   if(rms > .45 && ncc>20)
 { push()
- var bc = new boxx(100,-200*random(-1,1),-200*random(-1,1),-3000)
+ var bc = new boxx(100,-100*random(-1,1),-100*random(-1,1),-4000)
 b.push(bc)
 //console.log("boz rendered")
  ncc = 0
