@@ -12,6 +12,7 @@ function preload()
  {
  song = loadSound(
  'Believer.mp3');
+  
 bg=loadImage('Bg.jpeg')
   blo= loadImage('1584362139704.png')
 }
@@ -38,8 +39,8 @@ let rms = analyzer.getLevel();
 
   
   //fill(255,0,255)
-  
-  image(bg,-200,-200,width,height)
+  background(255)
+  image(bg,0,0,width,height)
   //background(0,255,0)
   //translate(x,y,z)
   //rotateY(.01*z)
