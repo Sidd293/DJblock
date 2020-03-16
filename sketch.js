@@ -40,7 +40,7 @@ let rms = analyzer.getLevel();
   
   //fill(255,0,255)
   background(255)
-  image(bg,0,0,width,height)
+  image(bg,-400,-400,width,height)
   //background(0,255,0)
   //translate(x,y,z)
   //rotateY(.01*z)
