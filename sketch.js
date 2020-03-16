@@ -13,7 +13,7 @@ function preload()
  song = loadSound(
  'Believer.mp3');
 bg=loadImage('Bg.jpeg')
-  blo= loadImage('images (1).jpeg')
+  blo= loadImage('1584362139704.png')
 }
 
 function setup() {
