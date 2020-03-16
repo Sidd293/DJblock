@@ -2,6 +2,7 @@ rst = 0
 var ncc = 0
 var b=[]
 ct = 0
+var blo;
 //z = -1000
 //x =100
 //y = 100
@@ -12,6 +13,7 @@ function preload()
  song = loadSound(
  'Believer.mp3');
 bg=loadImage('Bg.jpeg')
+  blo= loadImage('images (1).jpeg')
 }
 
 function setup() {
@@ -55,7 +57,7 @@ let rms = analyzer.getLevel();
 directionalLight(0, 0, 250, 0, height, b[hap].retz());
   directionalLight(250, 0, 0, 0, 0, b[hap].retz());
   specularMaterial(255,100,100);
- 
+ texture(blo)
 
  b[hap].trans()
 b[hap].show()
