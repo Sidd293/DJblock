@@ -17,7 +17,7 @@ bg=loadImage('Bg.jpeg')
 }
 
 function setup() {
-  createCanvas(400, 400,WEBGL);
+  createCanvas(800, 800,WEBGL);
 song.loop();
 
    analyzer = new p5.Amplitude();
@@ -73,7 +73,7 @@ translate(0,0,0)
 
   if(rms > .45 && ncc>20)
 { push()
- var bc = new boxx(100,-100*random(-1,1),-100*random(-1,1),-4000)
+ var bc = new boxx(100,-100*random(-1,1),-100*random(-1,1),-2000)
 b.push(bc)
 //console.log("boz rendered")
  ncc = 0
