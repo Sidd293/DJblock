@@ -54,8 +54,8 @@ let rms = analyzer.getLevel();
   for(var ha = b.length-1;ha>0;ha--) 
 {// } 
  hap=b.length-ha
-directionalLight(250, 250, 250, 0, height, b[hap].retz()+500);
-  directionalLight(250, 250, 250, 0, 0, b[hap].retz()+500);
+directionalLight(250, 250, 250, 0, height, b[hap].retz()-500);
+  directionalLight(250, 250, 250, 0, 0, b[hap].retz()-500);
   specularMaterial(255,100,100);
  texture(blo)
 
