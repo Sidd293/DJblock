@@ -1,3 +1,6 @@
+var alphax =0
+var beta = 0
+var gamma = 0
 rst = 0
 var ncc = 0
 var b=[]
@@ -41,6 +44,9 @@ let rms = analyzer.getLevel();
   //fill(255,0,255)
   background(255)
   image(bg,-400,-400,width,height)
+ tht=map(gamma,-90,90,-180,180)*2
+  //thty= map(beta,-90,90,-180,180)*2
+camera(0, (height/2)/tan(PI/6),0,0,0,tht,1,0,0)
   //background(0,255,0)
   //translate(x,y,z)
   //rotateY(.01*z)
@@ -88,3 +94,10 @@ pop()
 }
 
 //function pushit(rms,ncc)
+
+window.addEventListener('deviceorientation', function(e) 
+{
+  alphax = e.alpha;
+  beta = e.beta;
+  gamma = e.gamma;
+});
