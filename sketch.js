@@ -46,7 +46,7 @@ let rms = analyzer.getLevel();
   image(bg,-400,-400,width,height)
  tht=map(gamma,-90,90,-180,180)*2
   //thty= map(beta,-90,90,-180,180)*2
-camera(0, (height/2)/tan(PI/6),0,0,0,tht,1,0,0)
+camera(0, (height/2)/tan(PI/6),0,0,0,tht+300,1,0,0)
   //background(0,255,0)
   //translate(x,y,z)
   //rotateY(.01*z)
