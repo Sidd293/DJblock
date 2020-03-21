@@ -20,7 +20,7 @@ bg=loadImage('Bg.jpeg')
 }
 
 function setup() {
-  createCanvas(400, 400,WEBGL);
+  createCanvas(800, 800,WEBGL);
 song.loop();
 del=2
    analyzer = new p5.Amplitude();
