@@ -43,6 +43,7 @@ var bt = new boxx(100,100,100,2000)
 
 
 function draw() {
+ scale(2)
 noStroke()
 let rms = analyzer.getLevel();
 
